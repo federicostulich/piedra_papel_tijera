@@ -10,12 +10,19 @@ const Jugada = function(mano){
             return rival.comoTeVaContra("Piedra");
         }
         if(rival.mano === "Papel"){
-            return "Derrota";
+            // return "Derrota";
+            return rival.comoTeVaContra("Piedra");
         }
         return "Empate";
     }
 
-    this.comoTeVaContra = () => "Victoria";
+    this.comoTeVaContra = () => {
+        if(this.mano === "Papel"){
+            return "Derrota";
+        }
+        return "Victoria";
+    }
+    
 }
 
 module.exports = Jugada;
