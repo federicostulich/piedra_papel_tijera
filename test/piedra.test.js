@@ -1,5 +1,7 @@
 "use-strict"
 
+const Jugada = require("../src/jugada");
+
 test("", ()=>{
     // setup
     const piedra1 = new Jugada("Piedra");
