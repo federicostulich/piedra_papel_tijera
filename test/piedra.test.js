@@ -11,10 +11,10 @@ test("El resultado de piedra contra piedra es empate.", ()=>{
     const resultado = piedra1.versus(piedra2);
     
     // assert
-    expect(resultado).toBe("Empate"); //0
+    expect(resultado).toBe("Empate");
 })
 
-test("El resultado de piedra contra tijera es empate.", ()=>{
+test("El resultado de piedra contra tijera es victoria.", ()=>{
     // setup
     const piedra = new Jugada("Piedra");
     const tijera = new Jugada("Tijera");
@@ -23,5 +23,17 @@ test("El resultado de piedra contra tijera es empate.", ()=>{
     const resultado = piedra.versus(tijera);
     
     // assert
-    expect(resultado).toBe("Victoria"); //0
+    expect(resultado).toBe("Victoria");
+})
+
+test("El resultado de piedra contra papel es derrota.", ()=>{
+    // setup
+    const piedra = new Jugada("Piedra");
+    const papel = new Jugada("Papel");
+
+    // exercise
+    const resultado = piedra.versus(papel);
+    
+    // assert
+    expect(resultado).toBe("Derrota");
 })
