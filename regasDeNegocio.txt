@@ -1,0 +1,6 @@
+Piedra gana Tijera
+Tijera gana Papel
+Papel gana a Piedra
+Piedra empata con Piedra
+Papel empata con Papel
+Tijera empata con Tijera
