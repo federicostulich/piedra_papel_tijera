@@ -19,7 +19,7 @@ test("El resultado de piedra contra piedra es empate.", ()=>{
 
 test("El resultado de piedra contra tijera es victoria.", ()=>{
     // setup
-    const piedra = new Jugada("Piedra");
+    const piedra = new Piedra();
     const tijera = new Tijera();
 
     // exercise
@@ -31,7 +31,7 @@ test("El resultado de piedra contra tijera es victoria.", ()=>{
 
 test("El resultado de piedra contra papel es derrota.", ()=>{
     // setup
-    const piedra = new Jugada("Piedra");
+    const piedra = new Piedra();
     const papel = new Papel();
 
     // exercise
