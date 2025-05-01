@@ -2,11 +2,12 @@
 
 const Jugada = require("../src/jugada");
 const Tijera = require("../src/tijera");
+const Piedra = require("../src/piedra");
 
 test("El resultado de piedra contra piedra es empate.", ()=>{
     // setup
     const piedra1 = new Jugada("Piedra");
-    const piedra2 = new Jugada("Piedra");
+    const piedra2 = new Piedra();
 
     // exercise
     const resultado = piedra1.versus(piedra2);
