@@ -6,9 +6,9 @@ const Jugada = function(mano){
     this.versus = (rival) => {
         // return rival.comoTeVaContraPiedra();
         if(this.mano === "Papel"){
-            return rival.comoTeVaContra("Papel");
+            return rival.comoTeVaContra(this.mano);
         }
-        return rival.comoTeVaContra("Piedra");
+        return rival.comoTeVaContra(this.mano);
     }
 
     this.comoTeVaContra = (manoRival) => {
