@@ -3,6 +3,7 @@
 const Jugada = require("../src/jugada");
 const Tijera = require("../src/tijera");
 const Piedra = require("../src/piedra");
+const Papel = require("../src/papel");
 
 test("El resultado de piedra contra piedra es empate.", ()=>{
     // setup
@@ -31,7 +32,7 @@ test("El resultado de piedra contra tijera es victoria.", ()=>{
 test("El resultado de piedra contra papel es derrota.", ()=>{
     // setup
     const piedra = new Jugada("Piedra");
-    const papel = new Jugada("Papel");
+    const papel = new Papel();
 
     // exercise
     const resultado = piedra.versus(papel);
