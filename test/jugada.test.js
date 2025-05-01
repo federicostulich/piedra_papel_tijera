@@ -1,6 +1,5 @@
 'use-strict'
 
-const Jugada = require("../src/jugada");
 const Tijera = require("../src/tijera");
 const Piedra = require("../src/piedra");
 const Papel = require("../src/papel");
@@ -44,7 +43,7 @@ test("El resultado de piedra contra papel es derrota.", ()=>{
 
 test("El resultado de papel contra papel es empate.", ()=>{
     // setup
-    const papel1 = new Jugada("Papel");
+    const papel1 = new Papel()
     const papel2 = new Papel();
 
     // exercise
@@ -56,7 +55,7 @@ test("El resultado de papel contra papel es empate.", ()=>{
 
 test("El resultado de papel contra tijera es derrota.", ()=>{
     // setup
-    const papel = new Jugada("Papel");
+    const papel = new Papel()
     const tijera = new Tijera();
 
     // exercise
