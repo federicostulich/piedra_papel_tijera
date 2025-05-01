@@ -2,6 +2,10 @@
 
 const Piedra = function(){
 
+    this.versus = (rival) => {
+        return rival.comoTeVaContra("Piedra");
+    }
+
     this.comoTeVaContra = (manoRival) => {
         return "Empate";
     }

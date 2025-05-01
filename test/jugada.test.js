@@ -7,7 +7,7 @@ const Papel = require("../src/papel");
 
 test("El resultado de piedra contra piedra es empate.", ()=>{
     // setup
-    const piedra1 = new Jugada("Piedra");
+    const piedra1 = new Piedra();
     const piedra2 = new Piedra();
 
     // exercise
