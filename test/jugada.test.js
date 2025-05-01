@@ -37,3 +37,16 @@ test("El resultado de piedra contra papel es derrota.", ()=>{
     // assert
     expect(resultado).toBe("Derrota");
 })
+
+
+test("El resultado de papel contra papel es empate.", ()=>{
+    // setup
+    const papel1 = new Jugada("Papel");
+    const papel2 = new Jugada("Papel");
+
+    // exercise
+    const resultado = papel1.versus(papel2);
+    
+    // assert
+    expect(resultado).toBe("Empate");
+})
