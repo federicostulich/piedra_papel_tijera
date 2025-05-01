@@ -6,6 +6,7 @@ const Tijera = function(){
         if(manoRival === "Papel"){
             return "Derrota";
         }
+        return "Victoria";
     }
 
 }

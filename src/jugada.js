@@ -20,7 +20,6 @@ const Jugada = function(mano){
             if(this.mano === "Piedra"){
                 return "Empate";
             }
-            return "Victoria";
         }
     }
     
