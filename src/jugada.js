@@ -17,9 +17,6 @@ const Jugada = function(mano){
             if(this.mano === "Papel"){
                 return "Derrota";
             }
-            if(this.mano === "Piedra"){
-                return "Empate";
-            }
         }
     }
     
