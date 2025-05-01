@@ -13,11 +13,6 @@ const Jugada = function(mano){
         if(manoRival === "Papel"){
             return "Empate";
         }
-        if(manoRival === "Piedra"){
-            if(this.mano === "Papel"){
-                return "Derrota";
-            }
-        }
     }
     
 }
