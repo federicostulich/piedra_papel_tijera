@@ -1,5 +1,7 @@
 'use-strict'
 
+const Tijera = require("./tijera");
+
 const Jugada = function(mano){
     this.mano = mano;
 
@@ -9,18 +11,17 @@ const Jugada = function(mano){
 
     this.comoTeVaContra = (manoRival) => {
         if(manoRival === "Papel"){
-            if(this.mano === "Tijera"){
+            return "Empate";
+        }
+        if(manoRival === "Piedra"){
+            if(this.mano === "Papel"){
                 return "Derrota";
             }
-            return "Empate";
+            if(this.mano === "Piedra"){
+                return "Empate";
+            }
+            return "Victoria";
         }
-        if(this.mano === "Papel"){
-            return "Derrota";
-        }
-        if(this.mano === "Piedra"){
-            return "Empate";
-        }
-        return "Victoria";
     }
     
 }
