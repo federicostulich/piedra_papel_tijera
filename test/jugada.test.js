@@ -45,7 +45,7 @@ test("El resultado de piedra contra papel es derrota.", ()=>{
 test("El resultado de papel contra papel es empate.", ()=>{
     // setup
     const papel1 = new Jugada("Papel");
-    const papel2 = new Jugada("Papel");
+    const papel2 = new Papel();
 
     // exercise
     const resultado = papel1.versus(papel2);
