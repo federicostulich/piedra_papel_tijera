@@ -1,5 +1,7 @@
 'use-strict'
 
+const Tijera = require("./tijera")
+
 const Piedra = function(){
 
     this.versus = (rival) => {
@@ -10,11 +12,10 @@ const Piedra = function(){
         if(manoRival==="Papel"){
             return "Victoria";
         }
-        if(manoRival === "Tijera"){
-            return "Derrota";
-        }
         return "Empate";
     }
+
+    this.resultadoDeTijeraContraMi = () => "Derrota"
 
 }
 
