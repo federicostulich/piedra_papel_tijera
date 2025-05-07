@@ -7,6 +7,9 @@ const Piedra = function(){
     }
 
     this.comoTeVaContra = (manoRival) => {
+        if(manoRival==="Papel"){
+            return "Victoria";
+        }
         return "Empate";
     }
 

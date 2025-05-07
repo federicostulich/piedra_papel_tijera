@@ -74,5 +74,5 @@ test("El resultado de papel cuando esta mojado contra piedra es victoria.", ()=>
     const resultado = papel.versus(piedra);
     
     // assert
-    expect(resultado).toBe("Victoria");
+    expect(papel.versus(piedra)).toBe("Victoria");
 })
