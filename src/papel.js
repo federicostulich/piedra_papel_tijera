@@ -3,11 +3,11 @@
 const Papel = function(){
 
     this.versus = (rival) => {
-        return rival.comoTeVaContra("Papel");
+        return rival.resultadoDeManoRivalContraMi("Papel");
     }
 
 
-    this.comoTeVaContra = (manoRival) => {
+    this.resultadoDeManoRivalContraMi = (manoRival) => {
         if(manoRival === "Papel"){
             return "Empate";
         }

@@ -3,10 +3,10 @@
 const Piedra = function(){
 
     this.versus = (rival) => {
-        return rival.comoTeVaContra("Piedra");
+        return rival.resultadoDeManoRivalContraMi("Piedra");
     }
 
-    this.comoTeVaContra = (manoRival) => {
+    this.resultadoDeManoRivalContraMi = (manoRival) => {
         if(manoRival==="Papel"){
             return "Victoria";
         }
