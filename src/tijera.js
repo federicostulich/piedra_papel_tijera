@@ -2,11 +2,18 @@
 
 const Tijera = function(){
 
-    this.versus = () => "Empate";
+    this.versus = (rival) => {
+        return rival.comoTeVaContra("Tijera");
+        // return "Empate";
+    }
+        
 
     this.comoTeVaContra = (manoRival) => {
         if(manoRival === "Papel"){
             return "Derrota";
+        }
+        if(manoRival === "Tijera"){
+            return "Empate";
         }
         return "Victoria";
     }

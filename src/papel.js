@@ -11,6 +11,9 @@ const Papel = function(){
         if(manoRival === "Papel"){
             return "Empate";
         }
+        if(manoRival === "Tijera"){
+            return "Victoria";
+        }
         return "Derrota"
     }
 
