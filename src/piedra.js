@@ -10,6 +10,9 @@ const Piedra = function(){
         if(manoRival==="Papel"){
             return "Victoria";
         }
+        if(manoRival === "Tijera"){
+            return "Derrota";
+        }
         return "Empate";
     }
 

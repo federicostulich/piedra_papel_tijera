@@ -4,7 +4,6 @@ const Tijera = function(){
 
     this.versus = (rival) => {
         return rival.comoTeVaContra("Tijera");
-        // return "Empate";
     }
         
 
