@@ -65,7 +65,7 @@ test("El resultado de papel contra tijera es derrota.", ()=>{
     expect(resultado).toBe("Derrota");
 })
 
-test("El resultado de papel cuando esta mojado contra piedra es victoria.", ()=>{
+test("El resultado de papel contra piedra es victoria.", ()=>{
     // setup
     const papel = new Papel()
     const piedra = new Piedra();
@@ -74,5 +74,18 @@ test("El resultado de papel cuando esta mojado contra piedra es victoria.", ()=>
     const resultado = papel.versus(piedra);
     
     // assert
-    expect(papel.versus(piedra)).toBe("Victoria");
+    expect(resultado).toBe("Victoria");
 })
+
+test("El resultado de tijera contra tijera es empate.", ()=>{
+    // setup
+    const tijera1 = new Tijera();
+    const tijera2 = new Tijera();
+
+    // exercise
+    const resultado = tijera1.versus(tijera2);
+    
+    // assert
+    expect(resultado).toBe("Empate");
+})
+
