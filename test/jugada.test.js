@@ -64,3 +64,4 @@ test("El resultado de papel contra tijera es derrota.", ()=>{
     // assert
     expect(resultado).toBe("Derrota");
 })
+
