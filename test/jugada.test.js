@@ -89,3 +89,5 @@ test("El resultado de tijera contra tijera es empate.", ()=>{
     expect(resultado).toBe("Empate");
 })
 
+
+
