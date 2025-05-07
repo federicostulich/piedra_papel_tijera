@@ -3,23 +3,14 @@
 const Tijera = function(){
 
     this.versus = (rival) => {
-        return rival.resultadoDeTijeraContraMi()
-        // return rival.resultadoDeManoRivalContraMi(this);
-        // return rival.resultadoDeManoRivalContraMi("Tijera");
-    }
-
-    this.resultadoDeManoRivalContraMi = (manoRival) => {
-        if(manoRival === "Papel"){
-            return "Derrota";
-        }
-        return "Victoria";
+        return rival.resultadoDeTijeraContraMi();
     }
 
     this.resultadoDeTijeraContraMi = () => "Empate";
 
-    // this.resultadoContraTijera = () => "Empate";
+    this.resultadoDePapelContraMi = () => "Derrota";
 
-    // this.resultadoContraPapel = () => "Victoria";
+    this.resultadoDePiedraContraMi = () => "Victoria";
 
 }
 

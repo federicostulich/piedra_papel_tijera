@@ -1,22 +1,16 @@
 'use-strict'
 
-const Tijera = require("./tijera");
-
 const Papel = function(){
 
     this.versus = (rival) => {
-        return rival.resultadoDeManoRivalContraMi("Papel");
-    }
-
-
-    this.resultadoDeManoRivalContraMi = (manoRival) => {
-        if(manoRival === "Papel"){
-            return "Empate";
-        }
-        return "Derrota"
+        return rival.resultadoDePapelContraMi();
     }
 
     this.resultadoDeTijeraContraMi = () => "Victoria";
+
+    this.resultadoDePapelContraMi = () => "Empate";
+
+    this.resultadoDePiedraContraMi = () => "Derrota";
 
 }
 
