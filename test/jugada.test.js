@@ -100,3 +100,15 @@ test("El resultado de tijera contra papel es victoria.", ()=>{
     // assert
     expect(resultado).toBe("Victoria");
 })
+
+test("El resultado de tijera contra piedra es derrota.", ()=>{
+    // setup
+    const tijera = new Tijera();
+    const piedra = new Piedra();
+
+    // exercise
+    const resultado = tijera.versus(piedra);
+    
+    // assert
+    expect(resultado).toBe("Derrota");
+})
