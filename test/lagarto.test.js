@@ -2,6 +2,7 @@
 
 const Lagarto = require("../src/lagarto");
 const Papel = require("../src/papel");
+const Piedra = require("../src/piedra");
 
 test("El resultado de lagarto contra lagarto es empate.", ()=>{
     const lagarto1 = new Lagarto();
@@ -15,4 +16,11 @@ test("El resultado de lagarto contra Papel es victoria.", ()=>{
     const papel = new Papel();
 
     expect(lagarto.versus(papel)).toBe("Victoria");
+})
+
+test("El resultado de lagarto contra Piedra es victoria.", ()=>{
+    const lagarto = new Lagarto();
+    const piedra = new Piedra();
+
+    expect(lagarto.versus(piedra)).toBe("Derrota");
 })
