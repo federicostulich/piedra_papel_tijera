@@ -12,6 +12,7 @@ const Papel = function(){
 
     this.resultadoDePiedraContraMi = () => "Derrota";
 
+    this.resultadoDeLagartoContraMi = () => "Victoria";
 
 }
 
