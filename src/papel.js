@@ -14,6 +14,8 @@ const Papel = function(){
 
     this.resultadoDeLagartoContraMi = () => "Victoria";
 
+    this.resultadoDeSpockContraMi = () => "Derrota";
+
 }
 
 module.exports = Papel;

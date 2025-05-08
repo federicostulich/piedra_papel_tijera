@@ -3,6 +3,8 @@
 const Tijera = require("../src/tijera");
 const Piedra = require("../src/piedra");
 const Papel = require("../src/papel");
+const Lagarto = require("../src/lagarto");
+const Spock = require("../src/spock");
 
 test("El resultado de piedra contra piedra es empate.", ()=>{
     // setup
@@ -38,4 +40,18 @@ test("El resultado de piedra contra papel es derrota.", ()=>{
     
     // assert
     expect(resultado).toBe("Derrota");
+})
+
+test("El resultado de piedra contra lagarto es victoria.", ()=>{
+    const piedra = new Piedra();
+    const lagarto = new Lagarto();
+    
+    expect(piedra.versus(lagarto)).toBe("Victoria");
+})
+
+test("El resultado de piedra contra spock es derrota.", ()=>{
+    const piedra = new Piedra();
+    const spock = new Spock();
+    
+    expect(piedra.versus(spock)).toBe("Derrota");
 })

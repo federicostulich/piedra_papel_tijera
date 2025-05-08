@@ -12,7 +12,9 @@ const Piedra = function(){
 
     this.resultadoDePiedraContraMi = () => "Empate";
 
-    this.resultadoDeLagartoContraMi = () => "Derrota"
+    this.resultadoDeLagartoContraMi = () => "Derrota";
+
+    this.resultadoDeSpockContraMi = () => "Victoria";
 
 }
 

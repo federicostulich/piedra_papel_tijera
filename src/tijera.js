@@ -14,6 +14,8 @@ const Tijera = function(){
 
     this.resultadoDeLagartoContraMi = () => "Derrota";
 
+    this.resultadoDeSpockContraMi = () => "Victoria";
+
 }
 
 module.exports = Tijera;

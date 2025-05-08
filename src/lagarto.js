@@ -9,6 +9,13 @@ const Lagarto = function(){
     this.resultadoDeLagartoContraMi = () => "Empate";
 
     this.resultadoDeTijeraContraMi = () => "Victoria";
+
+    this.resultadoDePapelContraMi = () => "Derrota";
+
+    this.resultadoDePiedraContraMi = () => "Victoria";
+
+    this.resultadoDeSpockContraMi = () => "Derrota";
+
 }
 
 module.exports = Lagarto;
