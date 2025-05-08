@@ -12,6 +12,10 @@ const Piedra = function(){
 
     this.resultadoDePiedraContraMi = () => "Empate";
 
+    this.resultadoDeLagartoContraMi = () => "Derrota";
+
+    this.resultadoDeSpockContraMi = () => "Victoria";
+
 }
 
 module.exports = Piedra;

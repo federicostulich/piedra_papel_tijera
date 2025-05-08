@@ -12,6 +12,10 @@ const Papel = function(){
 
     this.resultadoDePiedraContraMi = () => "Derrota";
 
+    this.resultadoDeLagartoContraMi = () => "Victoria";
+
+    this.resultadoDeSpockContraMi = () => "Derrota";
+
 }
 
 module.exports = Papel;
