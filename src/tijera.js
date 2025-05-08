@@ -12,6 +12,8 @@ const Tijera = function(){
 
     this.resultadoDePiedraContraMi = () => "Victoria";
 
+    this.resultadoDeLagartoContraMi = () => "Derrota";
+
 }
 
 module.exports = Tijera;
