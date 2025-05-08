@@ -9,3 +9,10 @@ test("El resultado de lagarto contra lagarto es empate.", ()=>{
 
     expect(lagarto1.versus(lagarto2)).toBe("Empate");
 })
+
+test("El resultado de lagarto contra Papel es victoria.", ()=>{
+    const lagarto = new Lagarto();
+    const papel = new Papel();
+
+    expect(lagarto.versus(papel)).toBe("Victoria");
+})
