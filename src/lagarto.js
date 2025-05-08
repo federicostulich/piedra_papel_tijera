@@ -7,6 +7,8 @@ const Lagarto = function(){
     }
 
     this.resultadoDeLagartoContraMi = () => "Empate";
+
+    this.resultadoDeTijeraContraMi = () => "Victoria";
 }
 
 module.exports = Lagarto;
