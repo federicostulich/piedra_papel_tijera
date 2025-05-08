@@ -4,3 +4,13 @@ Papel gana a Piedra
 Piedra empata con Piedra
 Papel empata con Papel
 Tijera empata con Tijera
+------------------------
+Lagarto contra Piedra pierde
+Lagarto contra Tijera pierde
+Lagarto contra Papel gana
+Lagarto contra Spock gana
+Lagarto contra Lagarto empata
+Spock contra Piedra gana
+Spock contra Tijera gana
+Spock contra Papel pierde
+Spock contra Spock empata
