@@ -12,6 +12,8 @@ const Piedra = function(){
 
     this.resultadoDePiedraContraMi = () => "Empate";
 
+    this.resultadoDeLagartoContraMi = () => "Derrota"
+
 }
 
 module.exports = Piedra;
